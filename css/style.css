@@ -1,0 +1,218 @@
+body{
+  background-color: #000;
+  font-family: 'Dancing Script', cursive;
+}
+#contenido{
+	max-width:900px;
+	margin: auto;
+	display:flex;
+	flex-flow: row wrap;
+}
+@keyframes cabecera{
+	0%{
+		margin-top:150%;
+	}
+	60%{
+		margin-top:-5%;
+	}
+	100%{
+		margin-top:0px;
+	}
+}
+header{
+	background-color:#5b7989;
+	width:100%;
+	border-radius:10px 10px 0 0;
+	flex-grow:1;
+	padding:1%;
+	box-sizing:border-box;
+	animation:cabecera 1s;
+}
+header span{
+	font-size:2em;
+	margin:2%;
+	flex-grow:1;
+	color:#fff;
+}
+header nav{
+	display:inline;
+	float:right;
+	font-size:1em;
+	color:#fff;
+	
+}
+header nav ul{
+	list-style:none;
+}
+header nav ul li{
+	display:inline;
+	margin-left:3%;
+	margin-right:3%;
+}
+header nav ul li a{
+	color:#fff;
+}
+
+header nav ul li a:active{
+	text-decoration:none;
+}
+#imgprimaria{
+	width:100%;
+	background-color:#82c3a6;
+	height:auto;
+	box-sizing:border-box;
+	padding:2%;
+}
+#imgprimaria img{
+	width:100%;
+	height:auto;
+	border:1px solid black;
+}
+#paisajes{
+	width:50%;
+	background-color:#d5c75f;
+	height:auto;
+	text-align:center;
+	color:#000;
+	font-size:1.5em;
+	box-sizing:border-box;
+	padding:2%;
+	
+}
+#paisajes img{
+	border:2px solid black;
+	box-shadow:2px 2px 2px #82c3a6;
+	transition: transform 0.5s;
+}
+#paisajes img:hover{
+	transform:rotate(10deg);
+}
+#paisajes p{
+	display:block;
+	margin:0 auto;
+	paddind:0;
+}
+#retratos{
+	width:50%;
+	background-color:#d5c75f;
+	text-align:center;
+	color:#000;
+	font-size:1.5em;
+	box-sizing:border-box;
+	padding:2%;
+	
+}
+#retratos img{
+	border:2px solid black;
+	box-shadow:2px 2px 2px #82c3a6;
+	transition: transform 0.5s;
+}
+#retratos img:hover{
+	transform: translate(20px,-5px);
+}
+#retratos p{
+	display:block;
+	margin:0 auto;
+	paddind:0;
+}
+#galeria{
+	background-color:#d5c75f;
+	width:100%;
+	padding:2%;
+	box-sizing:border-box;
+}
+#galeria img{
+	width:33%;
+	height:50%;
+	margin: auto;
+}
+#img1{
+	filter: blur(10px);
+}
+#img2, #img4, #img6{
+	filter:grayscale(100);
+}
+#img3{
+	filter:sepia(90);
+}
+footer{
+	background-color:#C6d5c5;
+	width:100%;
+	border-radius:0 0 10px 10px;
+	box-sizing:border-box;
+	padding:2%;
+}
+footer div{
+	width:24%;
+	display:inline-block;
+	vertical-align:top;
+}
+@media (max-width:900px){
+	#contenedor{
+		width:100%;
+		margin:0px;
+		display:flex;
+		flex-flow:column wrap;
+		text-align:center;
+	}
+	header span{
+		text-align:center;
+		margin:0 auto;
+		display:inline-block;
+	}
+	header nav{
+		float:none;
+		margin:auto;
+	}
+	#paisajes{
+	width:100%;
+	background-color:#d5c75f;
+	height:auto;
+	text-align:center;
+	color:#000;
+	font-size:1em;
+	box-sizing:border-box;
+	padding:2%;
+	
+}
+#paisajes img{
+	border:2px solid black;
+	box-shadow:2px 2px 2px #82c3a6;
+}
+
+#retratos{
+	width:100%;
+	background-color:#d5c75f;
+	height:auto;
+	text-align:center;
+	color:#000;
+	font-size:1em;
+	box-sizing:border-box;
+	padding:2%;
+	
+}
+#retratos img{
+	border:2px solid black;
+	box-shadow:2px 2px 2px #82c3a6;
+	transition: transform 0.5s;
+}
+#galeria{
+	background-color:#d5c75f;
+	width:100%;
+	padding:2%;
+	box-sizing:border-box;
+}
+#galeria img{
+	width:100%;
+	height:auto;
+	margin: auto;
+}
+footer div{
+	width:100%;
+	display:inline-block;
+	vertical-align:top;
+	margin:1%;
+	box-sizing:border-box;
+	text-align:center;
+}
+}
